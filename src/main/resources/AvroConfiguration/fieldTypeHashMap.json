@@ -1,0 +1,40 @@
+[
+    {
+      "sourceType": "bigint",
+      "targetType": "int"
+    },
+    {
+      "sourceType": "bit",
+      "targetType": "boolean"
+    },
+    {
+      "sourceType": "char",
+      "targetType": "string"
+    },
+    {
+      "sourceType": "datetime",
+      "targetType":"long",
+      "logicalType": "timestamp-millis"
+    },
+    {
+      "sourceType": "decimal",
+      "targetType": "bytes",
+      "logicalType": "decimal"
+    },
+    {
+      "sourceType": "int",
+      "targetType": "int"
+    },
+    {
+      "sourceType": "nvarchar",
+      "targetType": "string"
+    },
+    {
+      "sourceType": "varchar",
+      "targetType": "string"
+    },
+    {
+      "sourceType": "smallint",
+      "targetType": "int"
+    }
+]

@@ -1,0 +1,8 @@
+[
+  {
+      "table":"Accounts",
+      "select": "select cols.Column_name,case is_nullable when 'YES' then cast(1 as bit) else cast(0 as bit) end as is_nullable, data_type, NUMERIC_PRECISION as precision, NUMERIC_SCALE as scale from INFORMATION_SCHEMA.TABLES tbl inner join information_schema.columns cols on cols.TABLE_NAME = tbl.TABLE_NAME and cols.TABLE_SCHEMA = tbl.TABLE_SCHEMA where tbl.table_name = 'accounts';",
+      "output": "za.co.spsi.etl.entity",
+      "fieldDelimiter": "_"
+    }
+]

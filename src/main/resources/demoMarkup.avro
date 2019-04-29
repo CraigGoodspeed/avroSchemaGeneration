@@ -1,0 +1,32 @@
+{
+  "type" : "record",
+  "namespace" : "za.co.spsi.research.kafka.entity.etl",
+  "name" : "ZesaMeterFavourites",
+  "fields" : [
+    {"name" : "zesaMeterId","type":"int"},
+    {"name" : "accountId","type":["null","int"]},
+    {"name" : "createdDate","type": ["null",{
+      "type" : "string",
+      "logicalType" : "timestamp-millis"
+    }],"default":null},
+    {"name" : "active" , "type":["null","boolean"]},
+    {"name":"meterNumber","type":["null","string"]},
+    {"name":"meterName","type":["null","string"]},
+    {"name" : "enableSMSPurchase" , "type":["null","boolean"]},
+    {"name":"smsPassword","type":["null","string"]},
+    {"name":"meterFirstName","type":["null","string"]},
+    {"name":"meterLastName","type":["null","string"]},
+    {"name":"meterMobile","type":["null","string"]},
+    {"name":"meterAddress1","type":["null","string"]},
+    {"name":"meterAddress2","type":["null","string"]},
+    {"name":"meterTown","type":["null","string"]},
+    {"name":"meterProvince","type":["null","string"]},
+    {"name" : "dateCommitted","type": ["null",{
+                                   "type" : "string",
+                                   "logicalType" : "timestamp-millis"
+                                 }],"default":null},
+    {"name" : "operation","type":["null","int"]},
+    {"name" : "updateMask","type":["null","string"]},
+    {"name" : "commandId","type":["null","int"]}
+  ]
+}
