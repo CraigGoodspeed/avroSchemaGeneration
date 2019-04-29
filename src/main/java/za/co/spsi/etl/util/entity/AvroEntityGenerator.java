@@ -47,6 +47,7 @@ public class AvroEntityGenerator {
         return toReturn;
     }
 
+    //Test method to verify the output.
     public static void main(String[] args){
         AvroEntityGenerator gen = new AvroEntityGenerator();
         gen.setFieldDelimiter("_");
